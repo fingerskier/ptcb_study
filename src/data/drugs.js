@@ -1,0 +1,112 @@
+// Top brand/generic drugs frequently tested on the PTCE.
+// Fields: brand, generic, class (therapeutic/pharmacologic), use (common indication).
+// This list emphasizes the high-yield medications technicians must recognize.
+
+export const drugs = [
+  // --- Cardiovascular ---
+  { brand: 'Lipitor', generic: 'atorvastatin', class: 'HMG-CoA reductase inhibitor (statin)', use: 'High cholesterol' },
+  { brand: 'Crestor', generic: 'rosuvastatin', class: 'HMG-CoA reductase inhibitor (statin)', use: 'High cholesterol' },
+  { brand: 'Zocor', generic: 'simvastatin', class: 'HMG-CoA reductase inhibitor (statin)', use: 'High cholesterol' },
+  { brand: 'Prinivil / Zestril', generic: 'lisinopril', class: 'ACE inhibitor', use: 'Hypertension, heart failure' },
+  { brand: 'Vasotec', generic: 'enalapril', class: 'ACE inhibitor', use: 'Hypertension' },
+  { brand: 'Cozaar', generic: 'losartan', class: 'Angiotensin II receptor blocker (ARB)', use: 'Hypertension' },
+  { brand: 'Diovan', generic: 'valsartan', class: 'Angiotensin II receptor blocker (ARB)', use: 'Hypertension' },
+  { brand: 'Norvasc', generic: 'amlodipine', class: 'Calcium channel blocker', use: 'Hypertension, angina' },
+  { brand: 'Cardizem', generic: 'diltiazem', class: 'Calcium channel blocker', use: 'Hypertension, arrhythmia' },
+  { brand: 'Lopressor / Toprol XL', generic: 'metoprolol', class: 'Beta blocker', use: 'Hypertension, angina' },
+  { brand: 'Tenormin', generic: 'atenolol', class: 'Beta blocker', use: 'Hypertension' },
+  { brand: 'Coreg', generic: 'carvedilol', class: 'Beta blocker', use: 'Heart failure, hypertension' },
+  { brand: 'Lasix', generic: 'furosemide', class: 'Loop diuretic', use: 'Edema, heart failure' },
+  { brand: 'Microzide', generic: 'hydrochlorothiazide (HCTZ)', class: 'Thiazide diuretic', use: 'Hypertension' },
+  { brand: 'Aldactone', generic: 'spironolactone', class: 'Potassium-sparing diuretic', use: 'Heart failure, edema' },
+  { brand: 'Coumadin / Jantoven', generic: 'warfarin', class: 'Anticoagulant (vitamin K antagonist)', use: 'Blood clot prevention' },
+  { brand: 'Eliquis', generic: 'apixaban', class: 'Anticoagulant (factor Xa inhibitor)', use: 'Stroke/clot prevention' },
+  { brand: 'Xarelto', generic: 'rivaroxaban', class: 'Anticoagulant (factor Xa inhibitor)', use: 'Stroke/clot prevention' },
+  { brand: 'Plavix', generic: 'clopidogrel', class: 'Antiplatelet', use: 'Prevent heart attack/stroke' },
+  { brand: 'Lanoxin', generic: 'digoxin', class: 'Cardiac glycoside', use: 'Heart failure, atrial fibrillation' },
+
+  // --- Endocrine / Diabetes ---
+  { brand: 'Glucophage', generic: 'metformin', class: 'Biguanide', use: 'Type 2 diabetes' },
+  { brand: 'Januvia', generic: 'sitagliptin', class: 'DPP-4 inhibitor', use: 'Type 2 diabetes' },
+  { brand: 'Glucotrol', generic: 'glipizide', class: 'Sulfonylurea', use: 'Type 2 diabetes' },
+  { brand: 'Amaryl', generic: 'glimepiride', class: 'Sulfonylurea', use: 'Type 2 diabetes' },
+  { brand: 'Lantus', generic: 'insulin glargine', class: 'Long-acting insulin', use: 'Diabetes' },
+  { brand: 'Humalog', generic: 'insulin lispro', class: 'Rapid-acting insulin', use: 'Diabetes' },
+  { brand: 'Ozempic', generic: 'semaglutide', class: 'GLP-1 receptor agonist', use: 'Type 2 diabetes' },
+  { brand: 'Synthroid / Levoxyl', generic: 'levothyroxine', class: 'Thyroid hormone', use: 'Hypothyroidism' },
+  { brand: 'Prednisone', generic: 'prednisone', class: 'Corticosteroid', use: 'Inflammation, immune suppression' },
+
+  // --- Gastrointestinal ---
+  { brand: 'Prilosec', generic: 'omeprazole', class: 'Proton pump inhibitor (PPI)', use: 'GERD, ulcers' },
+  { brand: 'Nexium', generic: 'esomeprazole', class: 'Proton pump inhibitor (PPI)', use: 'GERD, ulcers' },
+  { brand: 'Protonix', generic: 'pantoprazole', class: 'Proton pump inhibitor (PPI)', use: 'GERD' },
+  { brand: 'Zantac', generic: 'ranitidine', class: 'H2 receptor antagonist', use: 'Heartburn (note: withdrawn 2020 in US)' },
+  { brand: 'Pepcid', generic: 'famotidine', class: 'H2 receptor antagonist', use: 'Heartburn, GERD' },
+  { brand: 'Zofran', generic: 'ondansetron', class: 'Antiemetic (5-HT3 antagonist)', use: 'Nausea/vomiting' },
+
+  // --- Respiratory ---
+  { brand: 'Ventolin / ProAir', generic: 'albuterol', class: 'Short-acting beta-2 agonist (SABA)', use: 'Asthma, COPD (rescue)' },
+  { brand: 'Advair Diskus', generic: 'fluticasone/salmeterol', class: 'Corticosteroid + LABA', use: 'Asthma, COPD (maintenance)' },
+  { brand: 'Singulair', generic: 'montelukast', class: 'Leukotriene receptor antagonist', use: 'Asthma, allergies' },
+  { brand: 'Spiriva', generic: 'tiotropium', class: 'Anticholinergic (LAMA)', use: 'COPD' },
+  { brand: 'Flonase', generic: 'fluticasone (nasal)', class: 'Nasal corticosteroid', use: 'Allergic rhinitis' },
+  { brand: 'Zyrtec', generic: 'cetirizine', class: 'Antihistamine (2nd generation)', use: 'Allergies' },
+  { brand: 'Allegra', generic: 'fexofenadine', class: 'Antihistamine (2nd generation)', use: 'Allergies' },
+  { brand: 'Claritin', generic: 'loratadine', class: 'Antihistamine (2nd generation)', use: 'Allergies' },
+  { brand: 'Benadryl', generic: 'diphenhydramine', class: 'Antihistamine (1st generation)', use: 'Allergies, insomnia' },
+
+  // --- CNS / Psychiatry ---
+  { brand: 'Zoloft', generic: 'sertraline', class: 'SSRI antidepressant', use: 'Depression, anxiety' },
+  { brand: 'Prozac', generic: 'fluoxetine', class: 'SSRI antidepressant', use: 'Depression, OCD' },
+  { brand: 'Lexapro', generic: 'escitalopram', class: 'SSRI antidepressant', use: 'Depression, anxiety' },
+  { brand: 'Celexa', generic: 'citalopram', class: 'SSRI antidepressant', use: 'Depression' },
+  { brand: 'Cymbalta', generic: 'duloxetine', class: 'SNRI antidepressant', use: 'Depression, neuropathic pain' },
+  { brand: 'Effexor', generic: 'venlafaxine', class: 'SNRI antidepressant', use: 'Depression, anxiety' },
+  { brand: 'Wellbutrin', generic: 'bupropion', class: 'Aminoketone antidepressant', use: 'Depression, smoking cessation' },
+  { brand: 'Xanax', generic: 'alprazolam', class: 'Benzodiazepine (C-IV)', use: 'Anxiety, panic disorder' },
+  { brand: 'Ativan', generic: 'lorazepam', class: 'Benzodiazepine (C-IV)', use: 'Anxiety, seizures' },
+  { brand: 'Klonopin', generic: 'clonazepam', class: 'Benzodiazepine (C-IV)', use: 'Seizures, panic disorder' },
+  { brand: 'Ambien', generic: 'zolpidem', class: 'Sedative-hypnotic (C-IV)', use: 'Insomnia' },
+  { brand: 'Neurontin', generic: 'gabapentin', class: 'Anticonvulsant', use: 'Seizures, neuropathic pain' },
+  { brand: 'Lyrica', generic: 'pregabalin', class: 'Anticonvulsant (C-V)', use: 'Neuropathic pain, fibromyalgia' },
+  { brand: 'Lamictal', generic: 'lamotrigine', class: 'Anticonvulsant', use: 'Seizures, bipolar disorder' },
+  { brand: 'Adderall', generic: 'amphetamine/dextroamphetamine', class: 'CNS stimulant (C-II)', use: 'ADHD' },
+  { brand: 'Vyvanse', generic: 'lisdexamfetamine', class: 'CNS stimulant (C-II)', use: 'ADHD' },
+
+  // --- Pain / Opioids ---
+  { brand: 'Tylenol', generic: 'acetaminophen', class: 'Analgesic/antipyretic', use: 'Pain, fever' },
+  { brand: 'Advil / Motrin', generic: 'ibuprofen', class: 'NSAID', use: 'Pain, inflammation' },
+  { brand: 'Aleve', generic: 'naproxen', class: 'NSAID', use: 'Pain, inflammation' },
+  { brand: 'Celebrex', generic: 'celecoxib', class: 'COX-2 inhibitor NSAID', use: 'Arthritis pain' },
+  { brand: 'Norco / Vicodin', generic: 'hydrocodone/acetaminophen', class: 'Opioid analgesic (C-II)', use: 'Moderate-severe pain' },
+  { brand: 'Percocet', generic: 'oxycodone/acetaminophen', class: 'Opioid analgesic (C-II)', use: 'Moderate-severe pain' },
+  { brand: 'OxyContin', generic: 'oxycodone ER', class: 'Opioid analgesic (C-II)', use: 'Chronic severe pain' },
+  { brand: 'Ultram', generic: 'tramadol', class: 'Opioid analgesic (C-IV)', use: 'Moderate pain' },
+  { brand: 'MS Contin', generic: 'morphine sulfate', class: 'Opioid analgesic (C-II)', use: 'Severe pain' },
+  { brand: 'Suboxone', generic: 'buprenorphine/naloxone', class: 'Opioid partial agonist (C-III)', use: 'Opioid dependence' },
+
+  // --- Anti-infectives ---
+  { brand: 'Amoxil', generic: 'amoxicillin', class: 'Penicillin antibiotic', use: 'Bacterial infections' },
+  { brand: 'Augmentin', generic: 'amoxicillin/clavulanate', class: 'Penicillin + beta-lactamase inhibitor', use: 'Bacterial infections' },
+  { brand: 'Zithromax (Z-Pak)', generic: 'azithromycin', class: 'Macrolide antibiotic', use: 'Respiratory infections' },
+  { brand: 'Cipro', generic: 'ciprofloxacin', class: 'Fluoroquinolone antibiotic', use: 'UTI, GI infections' },
+  { brand: 'Levaquin', generic: 'levofloxacin', class: 'Fluoroquinolone antibiotic', use: 'Respiratory/UTI infections' },
+  { brand: 'Keflex', generic: 'cephalexin', class: 'Cephalosporin antibiotic', use: 'Skin/respiratory infections' },
+  { brand: 'Bactrim', generic: 'sulfamethoxazole/trimethoprim', class: 'Sulfonamide antibiotic', use: 'UTI, MRSA' },
+  { brand: 'Macrobid', generic: 'nitrofurantoin', class: 'Antibiotic', use: 'Urinary tract infection' },
+  { brand: 'Flagyl', generic: 'metronidazole', class: 'Antibiotic/antiprotozoal', use: 'Anaerobic/protozoal infections' },
+  { brand: 'Diflucan', generic: 'fluconazole', class: 'Antifungal (azole)', use: 'Fungal infections' },
+  { brand: 'Valtrex', generic: 'valacyclovir', class: 'Antiviral', use: 'Herpes, shingles' },
+
+  // --- Other high-yield ---
+  { brand: 'Flexeril', generic: 'cyclobenzaprine', class: 'Skeletal muscle relaxant', use: 'Muscle spasm' },
+  { brand: 'Premarin', generic: 'conjugated estrogens', class: 'Estrogen hormone', use: 'Menopause symptoms' },
+  { brand: 'Viagra', generic: 'sildenafil', class: 'PDE-5 inhibitor', use: 'Erectile dysfunction' },
+  { brand: 'Flomax', generic: 'tamsulosin', class: 'Alpha-1 blocker', use: 'Benign prostatic hyperplasia (BPH)' },
+  { brand: 'Fosamax', generic: 'alendronate', class: 'Bisphosphonate', use: 'Osteoporosis' },
+  { brand: 'Imitrex', generic: 'sumatriptan', class: 'Triptan', use: 'Migraine' },
+  { brand: 'Cogentin', generic: 'benztropine', class: 'Anticholinergic', use: 'Parkinsonism, EPS' },
+  { brand: 'Plaquenil', generic: 'hydroxychloroquine', class: 'Antimalarial/DMARD', use: 'Lupus, rheumatoid arthritis' },
+  { brand: 'Dilantin', generic: 'phenytoin', class: 'Anticonvulsant', use: 'Seizures' },
+  { brand: 'Lasix', generic: 'furosemide', class: 'Loop diuretic', use: 'Edema' },
+]
